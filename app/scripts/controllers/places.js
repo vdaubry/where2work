@@ -6,9 +6,8 @@ angular.module('where2workApp')
 
     //Load from cache
     if(sessionStorage.getItem('places')!=undefined) {
-      console.log("places="+sessionStorage.getItem('places'));
-      $scope.places = JSON.parse(sessionStorage.places);
-      $scope.formattedAddress = sessionStorage.formattedAddress;
+      $scope.places = JSON.parse(sessionStorage.getItem('places'));
+      $scope.formattedAddress = sessionStorage.getItem('formattedAddress');
       $scope.loading = false;
     }
     else {
@@ -33,13 +32,38 @@ angular.module('where2workApp')
 
 
 angular.module('where2workApp')
-  .controller('PlaceCtrl', function ($scope, $routeParams, parseService) {
+  .controller('PlaceCtrl', function ($scope, $routeParams, parseService, $sce) {
     var id = $routeParams.id;
     var parsePromise = parseService.getObject(id);
     
     parsePromise.then(function(object) {
       $scope.place = object;
+      var url = encodeURI("https://www.google.com/maps/embed/v1/place?key=AIzaSyAU-dlwZwy9u3YNF3UXSEAXr--rgBuDylc&q="+object.get('address'));
+      console.log("add="+object.get('address'));
+      $scope.url = url;
+      $scope.trustSrc = function(src) {
+        return $sce.trustAsResourceUrl(src);
+      }
     });
+  });
+
+
+angular.module('where2workApp')
+  .controller('PlaceCreateCtrl', function ($scope, parseService) {
+    $scope.place = {};
+    $scope.submitElement = function() {
+      $scope.errorMsg = null;
+      $scope.formSuccess = null;
+
+      var putObjectPromise = parseService.putObject($scope.place);
+      putObjectPromise.then(function(){
+        //invalidate cache
+        sessionStorage.removeItem('places');
+        $scope.formSuccess = true;
+      }, function(reason) {
+        $scope.errorMsg = reason;
+      });
+    }
   });
 
 

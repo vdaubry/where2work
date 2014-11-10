@@ -1,0 +1,44 @@
+<div ng-controller="PlaceCreateCtrl">
+  <div class="alert alert-danger" ng-show="errorMsg">
+    <a href="" class="close" data-dismiss="alert">&times;</a>
+    <strong>Error!</strong> {{errorMsg}}
+  </div>
+  <div class="alert alert-success" ng-show="formSuccess">
+    <a href="" class="close" data-dismiss="alert">&times;</a>
+    The place has been successfully added
+  </div>
+  <a href="#/places">Back</a>
+  <br>
+  <h2>Add a new place :</h2>
+  <form ng-submit="submitElement()">
+    <div class="form-inputs">
+      <div class="form-group">
+        <label class="control-label">Name:</label>
+        <input type="text" name="name" ng-model="place.name" class="form-control ng-pristine ng-valid" required>
+      </div>
+      <div class="form-group">
+        <label class="control-label">Address:</label>
+        <input type="text" name="name" ng-model="place.address" class="form-control ng-pristine ng-valid" required>
+      </div>
+      <div class="form-group">
+        <label class="control-label">
+          What is the wifi quality ?
+        </label>
+        <div class="radio">
+          <label><input value=0 type="radio" ng-model="place.wifiQuality">No wifi</label>
+        </div>
+        <div class="radio">
+          <label><input value=1 type="radio" ng-model="place.wifiQuality">Bad</label>
+        </div>
+        <div class="radio">
+          <label><input value=2 type="radio" ng-model="place.wifiQuality">Average</label>
+        </div>
+        <div class="radio">
+          <label><input value=4 type="radio" ng-model="place.wifiQuality">Perfect</label>
+        </div>
+      </div>
+    </div>
+    <a href="#/places" class="btn btn-default">Cancel</a>
+    <button type="submit" class="btn btn-success">Valider</button>
+  </form>
+</div>

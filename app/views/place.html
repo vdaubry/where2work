@@ -1,17 +1,16 @@
 <div ng-controller="PlaceCtrl">
   <a href="#/places">back</a>
   <br/>
-  
+
   <h4>{{place.get('name')}}</h4>
   <span class="glyphicon glyphicon-home"></span><span class="value">Address: {{place.get('address')}}</span>
   <br>
   <img src="images/glyphicons_073_wifi.png" class="icons"><span class="value">Wifi : {{place.get('wifiQuality')}}/5</span>
-
+  <br>
   <iframe
     width="600"
     height="450"
     frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAU-dlwZwy9u3YNF3UXSEAXr--rgBuDylc
-      &q=Space+Needle,Seattle+WA">
+    ng-src="{{trustSrc(url)}}">
   </iframe>
 </div>

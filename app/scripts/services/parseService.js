@@ -51,6 +51,26 @@ parseService.factory('parseService', function($q, geolocationService) {
     return deferred.promise;
   };
 
+  factory.putObject = function(placeDto) {
+    var deferred = $q.defer();
+    var Place = Parse.Object.extend("Place");
+    var place = new Place();
+     
+    place.set("name", placeDto.name);
+    place.set("address", placeDto.address);
+    place.set("wifiQuality", parseInt(placeDto.wifiQuality));
+     
+    place.save(null, {
+      success: function(place) {
+        deferred.resolve();
+      },
+      error: function(gameScore, error) {
+        deferred.reject(error.message);
+      }
+    });
+    return deferred.promise;
+  }
+
   return factory; 
 });
 

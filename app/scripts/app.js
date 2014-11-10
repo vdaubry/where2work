@@ -31,6 +31,10 @@ angular
         templateUrl: 'views/place.html',
         controller: 'PlaceCtrl'
       })
+      .when('/places/new', {
+        templateUrl: 'views/new.html',
+        controller: 'PlaceCreateCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

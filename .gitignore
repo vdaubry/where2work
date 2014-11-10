@@ -5,3 +5,4 @@ dist
 bower_components
 .DS_Store
 grunt-aws.json
+w2wCloudCode/config/*

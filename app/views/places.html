@@ -1,5 +1,7 @@
 <div ng-controller="PlacesCtrl">
 
+  <a href="#/places/new" class="btn btn-primary add">Click here to add a new place</a>
+
   <div class="search">
     Search: <input ng-model="formattedAddress" size=40>  
   </div>
@@ -11,9 +13,12 @@
   <div class="list-group">
     <a href="#/place/{{placeInfo.place.objectId}}" class="list-group-item" ng-repeat="placeInfo in places">
       <h4>{{placeInfo.place.name}} - {{ placeInfo.distance}}km</h4>
-      <span class="glyphicon glyphicon-home"></span><span class="value">Address: {{placeInfo.place.address}}</span>
+      <span class="glyphicon glyphicon-home"></span><span class="value">Addresse: {{placeInfo.place.address}}</span>
       <br>
-      <img src="images/glyphicons_073_wifi.png" class="icons"><span class="value">Wifi : {{placeInfo.place.wifiQuality}}/5</span>
+      <img src="images/glyphicons_073_wifi.png" class="icons"><span class="value">Wifi</span>
+      <div class="progress" style="width: 100px; height: 10px">
+        <div class="progress-bar {{placeInfo.place.wifiQuality | wifiColor}}" role="progressbar" style="width: {{placeInfo.place.wifiQuality * 100 / 4}}px"></div>
+      </div>
     </a>
   </div>
 </div>
