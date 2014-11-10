@@ -35,7 +35,7 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint:all'],
+        tasks: [],
         options: {
           livereload: '<%= connect.options.livereload %>'
         }
@@ -351,7 +351,36 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    // Syncs dist folder with S3 bucket : see https://github.com/MathieuLoutre/grunt-aws-s3
+    aws: grunt.file.readJSON('grunt-aws.json'),
+    aws_s3: {
+      options: {
+        accessKeyId: '<%= aws.AWSAccessKeyId %>', // Use the variables
+        secretAccessKey: '<%= aws.AWSSecretKey %>', // You can also use env variables
+        region: 'eu-west-1',
+        uploadConcurrency: 5
+      },
+      clean_production: {
+        options: {
+          bucket: 'where2work',
+          debug: false //files are actually deleted and not just logged
+        },
+        files: [
+          {dest: 'app/', action: 'delete'}
+        ]
+      },
+      production: {
+        options: {
+          bucket: 'where2work'
+        },
+        files: [
+          {expand: true, cwd: 'dist/', src: ['**'], dest: 'app/'}
+        ]
+      }
     }
+
   });
 
 
@@ -401,8 +430,11 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'newer:jshint',
-    'test',
     'build'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'build',
+    'aws_s3'
   ]);
 };

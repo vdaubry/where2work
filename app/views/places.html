@@ -1,0 +1,20 @@
+<div ng-controller="PlacesCtrl">
+
+  <div class="search">
+    Search: <input ng-model="formattedAddress" size=40>  
+  </div>
+
+  <div class="spinner" ng-show="loading">
+    <img src="images/24px-spinner-black.gif"><span>We are looking for places with wifi...</span>
+  </div>
+  
+
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="placeInfo in places">
+      <h4>{{placeInfo.place.get('name')}} - {{ placeInfo.distance}}km</h4>
+      <span class="glyphicon glyphicon-home"></span><span class="value">Address: {{placeInfo.place.get('address')}}</span>
+      <br>
+      <img src="images/glyphicons_073_wifi.png" class="icons"><span class="value">Wifi : {{placeInfo.place.get('wifiQuality')}}/5</span>
+    </li>
+  </ul>
+</div>
