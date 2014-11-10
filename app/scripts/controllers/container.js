@@ -1,7 +1,6 @@
 'use strict';
 
 function updateBodyLayout($rootScope, path) {
-  console.log("path="+path);
   var isIntro = ("/" === path);
   $rootScope.bodylayout = isIntro ? "bg" : "";
 }

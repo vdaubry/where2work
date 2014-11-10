@@ -9,7 +9,6 @@ geolocationService.factory('geolocationService', function($q, $window, $http) {
   factory.getLocation = function() {
     var deferred = $q.defer();
     if(factory.currentLocation) {
-      console.log("current location in cache");
       deferred.resolve(factory.currentLocation);
     }
     else if(!$window.navigator) {

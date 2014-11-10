@@ -36,21 +36,35 @@ parseService.factory('parseService', function($q, geolocationService) {
     return deferred.promise;
   };
 
-
-  function getDistanceForPoints(results, userLocation) {
-    var userPoint = new Parse.GeoPoint(userLocation);
-
-    var resultWithDistance = []
-    for (var i = 0; i < results.length; i++) {
-      var place = results[i];
-      var targetPoint = new Parse.GeoPoint(place.get('position'));
-      var distance = targetPoint.milesTo(userPoint);
-      var roundedDistance = Math.round(distance/1000*1.6);
-      resultWithDistance[i] = {place: place, distance: roundedDistance}
-    };
-
-    return resultWithDistance;
-  }
+  factory.getObject = function(id) {
+    var deferred = $q.defer();
+    var Place = Parse.Object.extend("Place");
+    var query = new Parse.Query(Place);
+    query.get(id, {
+      success: function(object) {
+        deferred.resolve(object);
+      },
+      error: function(object, error) {
+        deferred.reject(error.message);
+      }
+    });
+    return deferred.promise;
+  };
 
   return factory; 
 });
+
+function getDistanceForPoints(results, userLocation) {
+  var userPoint = new Parse.GeoPoint(userLocation);
+
+  var resultWithDistance = []
+  for (var i = 0; i < results.length; i++) {
+    var place = results[i];
+    var targetPoint = new Parse.GeoPoint(place.get('position'));
+    var distance = targetPoint.milesTo(userPoint);
+    var roundedDistance = Math.round(distance/1000*1.6);
+    resultWithDistance[i] = {place: place, distance: roundedDistance}
+  };
+
+  return resultWithDistance;
+}
