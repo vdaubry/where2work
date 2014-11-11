@@ -1,17 +1,27 @@
 <div ng-controller="PlaceCtrl">
-  <div class="centerContainer">
-    <h4>{{place.get('name')}}</h4>
-    <span class="glyphicon glyphicon-home"></span><span class="value">Address: {{place.get('address')}}</span>
-    <br>
-    <div class="wifiContainer">
-      <div class="wifi">
-        <img src="images/glyphicons_073_wifi.png" class="icons">
-        <span>Wifi</span>  
-      </div>
-      <div class="progress wifibar">
-        <div class="progress-bar {{place.get('wifiQuality') | wifiColor}}" role="progressbar" style="width: {{place.get('wifiQuality') * 100 / 4}}px"></div>
+  <div class="placeContainer">
+    <div class="place">
+      <h4>{{place.get('name')}}</h4>
+      <img src="images/glyphicons_185_screenshot.png" class="icon"><span class="value">Address: {{place.get('address')}}</span>
+      <br>
+      <span class="{{place.get('placeType')}} icon"></span><span class="value">{{place.get('placeType')}}</span>
+      <br>
+      <img src="images/glyphicons_441_phone_alt.png" class="icon">  Can have conf call ?<span class="glyphicon {{place.get('phoneFriendly') | boolIcon}} value"></span>
+      <br>
+      <img src="images/glyphicons_184_volume_up.png" class="icon">  Is it a quiet place ?<span class="glyphicon {{place.get('quiet') | boolIcon}} value"></span>
+      <br>
+      <span class="glyphicon glyphicon-euro"></span><span class="value">{{place.get('price')}}</span>
+      <div style="position: absolute;">
+        <div>
+          <img src="images/glyphicons_073_wifi.png" class="icon">
+          <span>Wifi</span>  
+        </div>
+        <div class="progress wifibar" style="bottom: -10px; left: 55px">
+          <div class="progress-bar {{place.get('wifiQuality') | wifiColor}}" role="progressbar" style="width: {{place.get('wifiQuality') * 100 / 4}}px"></div>
+        </div>
       </div>
     </div>
+    
     <br>
     <iframe
       width="350"

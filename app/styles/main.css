@@ -68,9 +68,7 @@ body {
   margin-right: auto;
 }
 
-.place {
-  height: 220px;
-}
+
 
 .bar {
   background-image: url("../images/glyphicons_273_drink.png")
@@ -92,7 +90,7 @@ body {
 
 .wifibar {
   left: 67px;
-  bottom: 18px;
+  bottom: -1px;
   position: absolute;
   width: 100px;
   height: 10px;
