@@ -24,13 +24,13 @@
           What kind of place is it ?
         </label>
         <div class="radio">
-          <label><input value="bar" type="radio" ng-model="place.type">Bar / Pub / Cafe</label>
+          <label><input value="bar" type="radio" ng-model="place.placeType">Bar / Pub / Cafe</label>
         </div>
         <div class="radio">
-          <label><input value="coworking" type="radio" ng-model="place.type">Coworking space</label>
+          <label><input value="coworking" type="radio" ng-model="place.placeType">Coworking space</label>
         </div>
         <div class="radio">
-          <label><input value="library" type="radio" ng-model="place.type">Library</label>
+          <label><input value="library" type="radio" ng-model="place.placeType">Library</label>
         </div>
       </div>
       <div class="form-group">
@@ -72,6 +72,10 @@
       <div class="radio">
         <label><input value=0 type="radio" ng-model="place.quiet">No</label>
       </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label">Enter the daily price (0 for free)</label>
+      <input type="text" name="price" ng-model="place.price" class="form-control ng-pristine ng-valid" required>
     </div>
     <a href="#/places" class="btn btn-default">Cancel</a>
     <button type="submit" class="btn btn-success">Valider</button>

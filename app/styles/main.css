@@ -60,10 +60,6 @@ body {
   padding: 20px 0px 20px 0px;
 }
 
-.icons {
-  width: 18px;
-}
-
 .placeContainer {
   line-height: 28px;
   width: 300px;
@@ -74,6 +70,24 @@ body {
 
 .place {
   height: 220px;
+}
+
+.bar {
+  background-image: url("../images/glyphicons_273_drink.png")
+}
+
+.coworking {
+  background-image: url("../images/glyphicons_043_group.png")
+}
+
+.library {
+  background-image: url("../images/glyphicons_351_book_open.png")
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
 }
 
 .wifibar {

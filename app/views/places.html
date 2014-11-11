@@ -11,17 +11,17 @@
   <div class="list-group placeContainer">
     <a href="#/place/{{placeInfo.place.objectId}}" class="list-group-item place" ng-repeat="placeInfo in places">
       <h4>{{placeInfo.place.name}} - {{ placeInfo.distance}}km</h4>
-      <img src="images/glyphicons_185_screenshot.png" class="icons"><span class="value">Addresse: {{placeInfo.place.address}}</span>
+      <img src="images/glyphicons_185_screenshot.png" class="icon"><span class="value">Addresse: {{placeInfo.place.address}}</span>
       <br>
-      <img src="images/{{placeInfo.place.placeType | typeIcon}}" class="icons"><span class="value">{{placeInfo.place.placeType}}</span>
+      <span class="{{placeInfo.place.placeType}} icon"></span><span class="value">{{placeInfo.place.placeType}}</span>
       <br>
-      <img src="images/glyphicons_441_phone_alt.png" class="icons">  Can have conf call ?<span class="glyphicon {{placeInfo.place.phoneFriendly | boolIcon}} value"></span>
+      <img src="images/glyphicons_441_phone_alt.png" class="icon">  Can have conf call ?<span class="glyphicon {{placeInfo.place.phoneFriendly | boolIcon}} value"></span>
       <br>
-      <img src="images/glyphicons_184_volume_up.png" class="icons">  Is it a noisy place ?<span class="glyphicon {{!placeInfo.place.quiet | boolIcon}} value"></span>
+      <img src="images/glyphicons_184_volume_up.png" class="icon">  Is it a noisy place ?<span class="glyphicon {{!placeInfo.place.quiet | boolIcon}} value"></span>
       <br>
       <div class="">
         <div class="wifi">
-          <img src="images/glyphicons_073_wifi.png" class="icons">
+          <img src="images/glyphicons_073_wifi.png" class="icon">
           <span>Wifi</span>  
         </div>
         <div class="progress wifibar">

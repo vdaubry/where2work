@@ -15,14 +15,16 @@ Parse.Cloud.beforeSave("Place", function(request, response) {
           response.error("Name is missing");
         } else if (!request.object.get("address")) {
           response.error("Address is missing");
-        } else if (!request.object.get("wifiQuality")) {
+        } else if (request.object.get("wifiQuality")==undefined) {
           response.error("Wifi Quality is missing");
-        } else if (!request.object.get("type")) {
+        } else if (!request.object.get("placeType")) {
           response.error("Place type is missing");
-        } else if (!request.object.get("phone")) {
+        } else if (request.object.get("phoneFriendly")==undefined) {
           response.error("Phone friendliness is missing");
-        } else if (!request.object.get("quiet")) {
+        } else if (request.object.get("quiet")==undefined) {
           response.error("Noisiness is missing");
+        } else if (request.object.get("price")==undefined) {
+          response.error("Price is missing");
         } else {
           response.success();
         }
