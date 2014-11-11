@@ -11,17 +11,17 @@
   <div class="list-group placeContainer">
     <a href="#/place/{{placeInfo.place.objectId}}" class="list-group-item place" ng-repeat="placeInfo in places">
       <h4>{{placeInfo.place.name}} - {{ placeInfo.distance}}km</h4>
-      <img src="images/glyphicons_185_screenshot.png" class="icon"><span class="value">Address: {{placeInfo.place.address}}</span>
+      <img src="../images/glyphicons_185_screenshot.png" class="icon"><span class="value">Address: {{placeInfo.place.address}}</span>
       <br>
       <span class="{{placeInfo.place.placeType}} icon"></span><span class="value">{{placeInfo.place.placeType}}</span>
       <br>
-      <img src="images/glyphicons_441_phone_alt.png" class="icon">  Can have conf call ?<span class="glyphicon {{placeInfo.place.phoneFriendly | boolIcon}} value"></span>
+      <img src="../images/glyphicons_441_phone_alt.png" class="icon">  Can have conf call ?<span class="glyphicon {{placeInfo.place.phoneFriendly | boolIcon}} value"></span>
       <br>
-      <img src="images/glyphicons_184_volume_up.png" class="icon">  Is it a quiet place ?<span class="glyphicon {{placeInfo.place.quiet | boolIcon}} value"></span>
+      <img src="../images/glyphicons_184_volume_up.png" class="icon">  Is it a quiet place ?<span class="glyphicon {{placeInfo.place.quiet | boolIcon}} value"></span>
       <br>
       <span class="glyphicon glyphicon-euro"></span><span class="value">{{placeInfo.place.price}}</span>
       <div>
-        <img src="images/glyphicons_073_wifi.png" class="icon">
+        <img src="../images/glyphicons_073_wifi.png" class="icon">
         <span>Wifi</span>  
       </div>
       <div class="progress wifibar">
@@ -29,6 +29,6 @@
       </div>
     </a>
     <br>
-    <button ng-click="reloadList()" class="btn btn-warning">Reload places list</button>
+    <button ng-click="reloadList()" ng-hide="loading" class="btn btn-warning">Reload places list</button>
   </div>
 </div>
