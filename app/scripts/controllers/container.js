@@ -3,6 +3,7 @@
 function updateBodyLayout($rootScope, path) {
   var isIntro = ("/" === path);
   $rootScope.bodylayout = isIntro ? "bg" : "";
+  $rootScope.isIntro = isIntro;
 }
 
 angular.module('where2workApp')
