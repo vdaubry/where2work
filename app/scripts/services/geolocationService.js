@@ -41,6 +41,20 @@ geolocationService.factory('geolocationService', function($q, $window, $http) {
     return deferred.promise;
   };
 
+  factory.geocodeAddress = function(address) {
+    var deferred = $q.defer();
+    var geocoder = new google.maps.Geocoder();
+
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      var formatedAddress = results[0].formatted_address;
+      var coords = {longitude: results[0].geometry.location.k, latitude: results[0].geometry.location.B};
+      var result = {formatedAddress: formatedAddress, coords: coords}
+      deferred.resolve(result)
+    });
+
+    return deferred.promise;
+  }
+
   return factory;
 });
  

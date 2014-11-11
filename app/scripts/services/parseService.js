@@ -57,7 +57,8 @@ parseService.factory('parseService', function($q, geolocationService) {
     var deferred = $q.defer();
     var Place = Parse.Object.extend("Place");
     var place = new Place();
-     
+    var geoPoint = new Parse.GeoPoint({latitude: placeDto.latitude, longitude: placeDto.longitude});
+
     place.set("name", placeDto.name);
     place.set("address", placeDto.address);
     place.set("wifiQuality", parseInt(placeDto.wifiQuality));
@@ -65,7 +66,8 @@ parseService.factory('parseService', function($q, geolocationService) {
     place.set("phoneFriendly", (placeDto.phoneFriendly==1));
     place.set("quiet", (placeDto.quiet==1));
     place.set("price", parseInt(placeDto.price));
-     
+    place.set("position", geoPoint);
+
     place.save(null, {
       success: function(place) {
         deferred.resolve();

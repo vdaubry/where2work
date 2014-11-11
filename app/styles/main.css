@@ -4,6 +4,11 @@ body {
   padding-bottom: 20px;
 }
 
+.title {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
 .bg {
   background-image: url("../images/work-stations-plus-espresso.jpg");
   background-size: cover;

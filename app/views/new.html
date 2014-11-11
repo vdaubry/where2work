@@ -17,8 +17,13 @@
       </div>
       <div class="form-group">
         <label class="control-label">What is the address :</label>
-        <input type="text" name="name" ng-model="place.address" class="form-control ng-pristine ng-valid" placeholder="Enter full address" required>
+        <input type="text" name="name" ng-model="place.address" ng-blur="updateCoords(place.address)" class="form-control ng-pristine ng-valid" placeholder="Enter full address" required>
       </div>
+      <div class="form-inline">
+        <input type="text" name="name" ng-model="place.longitude" class="form-control uneditable-input" placeholder="Computed longitude" disabled>
+        <input type="text" name="name" ng-model="place.latitude" class="form-control" placeholder="Computed latitude" disabled>
+      </div>
+      <br>
       <div class="form-group">
         <label class="control-label">
           What kind of place is it ?

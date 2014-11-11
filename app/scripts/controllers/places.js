@@ -38,7 +38,7 @@ angular.module('where2workApp')
   .controller('PlaceCtrl', function ($scope, $routeParams, parseService, $sce) {
     var id = $routeParams.id;
     var parsePromise = parseService.getObject(id);
-    
+
     parsePromise.then(function(object) {
       $scope.place = object;
       var url = encodeURI("https://www.google.com/maps/embed/v1/place?key=AIzaSyAU-dlwZwy9u3YNF3UXSEAXr--rgBuDylc&q="+object.get('address'));
@@ -48,12 +48,26 @@ angular.module('where2workApp')
         return $sce.trustAsResourceUrl(src);
       }
     });
+
+
   });
 
 
 angular.module('where2workApp')
-  .controller('PlaceCreateCtrl', function ($scope, parseService) {
+  .controller('PlaceCreateCtrl', function ($scope, parseService, geolocationService) {
     $scope.place = {};
+
+    $scope.updateCoords = function(address) {
+      var geoservicePromise = geolocationService.geocodeAddress(address);
+      geoservicePromise.then(function(result, coords){
+        console.log("formatedAddress="+result.formatedAddress);
+        console.log("coords="+result.coords);
+        $scope.place.address = result.formatedAddress;
+        $scope.place.longitude = result.coords.longitude;
+        $scope.place.latitude = result.coords.latitude;
+      })
+    }
+
     $scope.submitElement = function() {
       $scope.errorMsg = null;
       $scope.formSuccess = null;
