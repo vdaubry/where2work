@@ -1,7 +1,7 @@
 <div ng-controller="PlacesCtrl">
 
   <div class="search">
-    Search: <input ng-model="formattedAddress" size=40>  
+    Your location: <input ng-model="formattedAddress" size=40>  
   </div>
 
   <div class="spinner" ng-show="loading">
@@ -21,14 +21,14 @@
       <br>
       <span class="glyphicon glyphicon-euro"></span><span class="value">{{placeInfo.place.price}}</span>
       <div>
-        <div>
-          <img src="images/glyphicons_073_wifi.png" class="icon">
-          <span>Wifi</span>  
-        </div>
-        <div class="progress wifibar">
-          <div class="progress-bar {{placeInfo.place.wifiQuality | wifiColor}}" role="progressbar" style="width: {{placeInfo.place.wifiQuality * 100 / 4}}px"></div>
-        </div>
+        <img src="images/glyphicons_073_wifi.png" class="icon">
+        <span>Wifi</span>  
+      </div>
+      <div class="progress wifibar">
+        <div class="progress-bar {{placeInfo.place.wifiQuality | wifiColor}}" role="progressbar" style="width: {{placeInfo.place.wifiQuality * 100 / 4}}px"></div>
       </div>
     </a>
+    <br>
+    <button ng-click="reloadList()" class="btn btn-warning">Reload places list</button>
   </div>
 </div>

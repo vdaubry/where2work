@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('where2workApp')
-  .controller('PlacesCtrl', function ($scope, parseService, geolocationService) {
+  .controller('PlacesCtrl', function ($scope, parseService, geolocationService, $route) {
     $scope.loading = true;
 
     //Load from cache
@@ -16,7 +16,7 @@ angular.module('where2workApp')
       placesPromise.then(function(results) {
         sessionStorage.setItem('places', JSON.stringify(results));
         $scope.places = JSON.parse(sessionStorage.getItem('places'));
-        
+
         var addressPromise = geolocationService.reverseGeocodeLocation();
         addressPromise.then(function(formattedAddress) {
           $scope.formattedAddress = formattedAddress;
@@ -28,6 +28,11 @@ angular.module('where2workApp')
         console.log("get places failed with reason :"+reason);
         $scope.loading = false;
       });
+    }
+
+    $scope.reloadList = function() {
+      sessionStorage.removeItem('places'); 
+      $route.reload();
     }
   });
 
