@@ -364,19 +364,19 @@ module.exports = function (grunt) {
       },
       clean_production: {
         options: {
-          bucket: 'where2work',
+          bucket: 'where2workapp.com',
           debug: false //files are actually deleted and not just logged
         },
         files: [
-          {dest: 'app/', action: 'delete'}
+          {dest: '.', action: 'delete'}
         ]
       },
       production: {
         options: {
-          bucket: 'where2work'
+          bucket: 'where2workapp.com'
         },
         files: [
-          {expand: true, cwd: 'dist/', src: ['**'], dest: 'app/'}
+          {expand: true, cwd: 'dist/', src: ['**'], dest: '.'}
         ]
       }
     }

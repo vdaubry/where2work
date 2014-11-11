@@ -7,18 +7,31 @@
     <a href="" class="close" data-dismiss="alert">&times;</a>
     The place has been successfully added
   </div>
-  <a href="#/places">Back</a>
   <br>
   <h2>Add a new place :</h2>
   <form ng-submit="submitElement()">
     <div class="form-inputs">
       <div class="form-group">
-        <label class="control-label">Name:</label>
+        <label class="control-label">What is the name of this place ?</label>
         <input type="text" name="name" ng-model="place.name" class="form-control ng-pristine ng-valid" required>
       </div>
       <div class="form-group">
-        <label class="control-label">Address:</label>
+        <label class="control-label">What is the address :</label>
         <input type="text" name="name" ng-model="place.address" class="form-control ng-pristine ng-valid" required>
+      </div>
+      <div class="form-group">
+        <label class="control-label">
+          What kind of place is it ?
+        </label>
+        <div class="radio">
+          <label><input value="bar" type="radio" ng-model="place.type">Bar / Pub / Cafe</label>
+        </div>
+        <div class="radio">
+          <label><input value="coworking" type="radio" ng-model="place.type">Coworking space</label>
+        </div>
+        <div class="radio">
+          <label><input value="library" type="radio" ng-model="place.type">Library</label>
+        </div>
       </div>
       <div class="form-group">
         <label class="control-label">
@@ -36,6 +49,28 @@
         <div class="radio">
           <label><input value=4 type="radio" ng-model="place.wifiQuality">Perfect</label>
         </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label">
+          Is it a good place to have a phone call or skype conference ?
+        </label>
+        <div class="radio">
+          <label><input value=1 type="radio" ng-model="place.phoneFriendly">Yes</label>
+        </div>
+        <div class="radio">
+          <label><input value=0 type="radio" ng-model="place.phoneFriendly">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label">
+        Is it a calm and quiet place ?
+      </label>
+      <div class="radio">
+        <label><input value=1 type="radio" ng-model="place.quiet">Yes</label>
+      </div>
+      <div class="radio">
+        <label><input value=0 type="radio" ng-model="place.quiet">No</label>
       </div>
     </div>
     <a href="#/places" class="btn btn-default">Cancel</a>

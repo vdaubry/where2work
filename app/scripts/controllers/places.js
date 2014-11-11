@@ -15,12 +15,15 @@ angular.module('where2workApp')
       var placesPromise = parseService.getAll();
       placesPromise.then(function(results) {
         sessionStorage.setItem('places', JSON.stringify(results));
-        $scope.places = JSON.parse(sessionStorage.places);
+        $scope.places = JSON.parse(sessionStorage.getItem('places'));
+
+        console.log("places="+sessionStorage.getItem('places'));
 
         var addressPromise = geolocationService.reverseGeocodeLocation();
         addressPromise.then(function(formattedAddress) {
           $scope.formattedAddress = formattedAddress;
           sessionStorage.setItem('formattedAddress', formattedAddress);
+
           $scope.loading = false;
         });
       }, function(reason) {

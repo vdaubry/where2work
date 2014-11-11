@@ -1,16 +1,25 @@
 <div ng-controller="PlaceCtrl">
-  <a href="#/places">back</a>
-  <br/>
+  <div class="centerContainer">
+    <h4>{{place.get('name')}}</h4>
+    <span class="glyphicon glyphicon-home"></span><span class="value">Address: {{place.get('address')}}</span>
+    <br>
+    <div class="wifiContainer">
+      <div class="wifi">
+        <img src="images/glyphicons_073_wifi.png" class="icons">
+        <span>Wifi</span>  
+      </div>
+      <div class="progress wifibar">
+        <div class="progress-bar {{place.get('wifiQuality') | wifiColor}}" role="progressbar" style="width: {{place.get('wifiQuality') * 100 / 4}}px"></div>
+      </div>
+    </div>
+    <br>
+    <iframe
+      width="350"
+      height="400"
+      frameborder="0" style="border:0"
+      ng-src="{{trustSrc(url)}}">
+    </iframe>
+  </div>
 
-  <h4>{{place.get('name')}}</h4>
-  <span class="glyphicon glyphicon-home"></span><span class="value">Address: {{place.get('address')}}</span>
-  <br>
-  <img src="images/glyphicons_073_wifi.png" class="icons"><span class="value">Wifi : {{place.get('wifiQuality')}}/5</span>
-  <br>
-  <iframe
-    width="600"
-    height="450"
-    frameborder="0" style="border:0"
-    ng-src="{{trustSrc(url)}}">
-  </iframe>
+  
 </div>

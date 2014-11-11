@@ -1,4 +1,4 @@
-<div ng-controller="PlacesCtrl" class="centerContainer">
+<div ng-controller="PlacesCtrl">
 
   <div class="search">
     Search: <input ng-model="formattedAddress" size=40>  
@@ -8,12 +8,18 @@
     <img src="images/24px-spinner-black.gif"><span>We are looking for places with wifi...</span>
   </div>
 
-  <div class="list-group">
-    <a href="#/place/{{placeInfo.place.objectId}}" class="list-group-item" ng-repeat="placeInfo in places">
+  <div class="list-group placeContainer">
+    <a href="#/place/{{placeInfo.place.objectId}}" class="list-group-item place" ng-repeat="placeInfo in places">
       <h4>{{placeInfo.place.name}} - {{ placeInfo.distance}}km</h4>
-      <span class="glyphicon glyphicon-home"></span><span class="value">Addresse: {{placeInfo.place.address}}</span>
+      <img src="images/glyphicons_185_screenshot.png" class="icons"><span class="value">Addresse: {{placeInfo.place.address}}</span>
       <br>
-      <div class="wifiContainer">
+      <img src="images/{{placeInfo.place.placeType | typeIcon}}" class="icons"><span class="value">{{placeInfo.place.placeType}}</span>
+      <br>
+      <img src="images/glyphicons_441_phone_alt.png" class="icons">  Can have conf call ?<span class="glyphicon {{placeInfo.place.phoneFriendly | boolIcon}} value"></span>
+      <br>
+      <img src="images/glyphicons_184_volume_up.png" class="icons">  Is it a noisy place ?<span class="glyphicon {{!placeInfo.place.quiet | boolIcon}} value"></span>
+      <br>
+      <div class="">
         <div class="wifi">
           <img src="images/glyphicons_073_wifi.png" class="icons">
           <span>Wifi</span>  
@@ -22,7 +28,6 @@
           <div class="progress-bar {{placeInfo.place.wifiQuality | wifiColor}}" role="progressbar" style="width: {{placeInfo.place.wifiQuality * 100 / 4}}px"></div>
         </div>
       </div>
-      
     </a>
   </div>
 </div>

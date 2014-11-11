@@ -56,6 +56,7 @@ body {
 }
 
 .search {
+  text-align: center;
   padding: 20px 0px 20px 0px;
 }
 
@@ -63,22 +64,24 @@ body {
   width: 18px;
 }
 
-.wifiContainer {
+.placeContainer {
+  line-height: 28px;
+  width: 300px;
+  height: 220px;
   margin-left: auto;
   margin-right: auto;
-  width: 157px;
-  height: 20px;
 }
 
-.wifi {
-  float: left;
+.place {
+  height: 220px;
 }
 
 .wifibar {
-  margin-top: 5px;
+  left: 67px;
+  bottom: 18px;
+  position: absolute;
   width: 100px;
   height: 10px;
-  float: right;
 }
 
 .value {
