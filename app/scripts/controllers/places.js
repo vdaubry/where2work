@@ -16,9 +16,7 @@ angular.module('where2workApp')
       placesPromise.then(function(results) {
         sessionStorage.setItem('places', JSON.stringify(results));
         $scope.places = JSON.parse(sessionStorage.getItem('places'));
-
-        console.log("places="+sessionStorage.getItem('places'));
-
+        
         var addressPromise = geolocationService.reverseGeocodeLocation();
         addressPromise.then(function(formattedAddress) {
           $scope.formattedAddress = formattedAddress;
@@ -60,8 +58,6 @@ angular.module('where2workApp')
     $scope.updateCoords = function(address) {
       var geoservicePromise = geolocationService.geocodeAddress(address);
       geoservicePromise.then(function(result, coords){
-        console.log("formatedAddress="+result.formatedAddress);
-        console.log("coords="+result.coords);
         $scope.place.address = result.formatedAddress;
         $scope.place.longitude = result.coords.longitude;
         $scope.place.latitude = result.coords.latitude;

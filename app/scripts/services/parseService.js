@@ -22,7 +22,7 @@ parseService.factory('parseService', function($q, geolocationService) {
 
       query.find({
         success: function(results) {
-          deferred.resolve(getDistanceForPoints(results));
+          deferred.resolve(getDistanceForPoints(results, userGeoPoint));
         },
         error: function(error) {
           deferred.reject(error.message);
@@ -52,8 +52,6 @@ parseService.factory('parseService', function($q, geolocationService) {
   };
 
   factory.putObject = function(placeDto) {
-    console.log("obj="+JSON.stringify(placeDto));
-
     var deferred = $q.defer();
     var Place = Parse.Object.extend("Place");
     var place = new Place();
@@ -83,16 +81,29 @@ parseService.factory('parseService', function($q, geolocationService) {
 });
 
 function getDistanceForPoints(results, userLocation) {
-  var userPoint = new Parse.GeoPoint(userLocation);
-
   var resultWithDistance = []
   for (var i = 0; i < results.length; i++) {
     var place = results[i];
-    var targetPoint = new Parse.GeoPoint(place.get('position'));
-    var distance = targetPoint.milesTo(userPoint);
-    var roundedDistance = Math.round(distance/1000*1.6);
+    var distanceKilometer = distance(place.get('position').latitude, place.get('position').longitude, userLocation.latitude, userLocation.longitude);
+    var roundedDistance = Math.round(distanceKilometer);
     resultWithDistance[i] = {place: place, distance: roundedDistance}
   };
 
   return resultWithDistance;
+}
+
+
+function distance(lat1, lon1, lat2, lon2) {
+    var radlat1 = Math.PI * lat1/180
+    var radlat2 = Math.PI * lat2/180
+    var radlon1 = Math.PI * lon1/180
+    var radlon2 = Math.PI * lon2/180
+    var theta = lon1-lon2
+    var radtheta = Math.PI * theta/180
+    var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+    dist = Math.acos(dist)
+    dist = dist * 180/Math.PI
+    dist = dist * 60 * 1.1515
+    dist = dist * 1.609344
+    return dist
 }

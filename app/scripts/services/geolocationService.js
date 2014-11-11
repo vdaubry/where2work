@@ -47,7 +47,7 @@ geolocationService.factory('geolocationService', function($q, $window, $http) {
 
     geocoder.geocode( { 'address': address}, function(results, status) {
       var formatedAddress = results[0].formatted_address;
-      var coords = {longitude: results[0].geometry.location.k, latitude: results[0].geometry.location.B};
+      var coords = {longitude: results[0].geometry.location.B, latitude: results[0].geometry.location.k};
       var result = {formatedAddress: formatedAddress, coords: coords}
       deferred.resolve(result)
     });

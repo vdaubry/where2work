@@ -7,7 +7,7 @@ Parse.Cloud.beforeSave("Place", function(request, response) {
   else {
     var Place = Parse.Object.extend("Place");
     var query = new Parse.Query(Place);
-    query.equalTo("name", request.object.get("name"));
+    query.equalTo("address", request.object.get("address"));
     query.first().then(function(duplicate) {
       //If no duplicates or if it is an update
       if (typeof duplicate === "undefined") {
@@ -29,7 +29,7 @@ Parse.Cloud.beforeSave("Place", function(request, response) {
           response.success();
         }
       } else {
-        response.error("Name already exists");
+        response.error("Place already exists");
       }
     });
   }
