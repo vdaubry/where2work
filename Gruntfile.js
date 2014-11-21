@@ -368,7 +368,7 @@ module.exports = function (grunt) {
           debug: false //files are actually deleted and not just logged
         },
         files: [
-          {dest: '.', action: 'delete'}
+          {dest: '/', action: 'delete'}
         ]
       },
       production: {
@@ -434,7 +434,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('deploy', [
-    'build',
+    //'build',
     'aws_s3'
   ]);
 };

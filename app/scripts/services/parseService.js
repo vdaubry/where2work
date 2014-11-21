@@ -85,7 +85,7 @@ function getDistanceForPoints(results, userLocation) {
   for (var i = 0; i < results.length; i++) {
     var place = results[i];
     var distanceKilometer = distance(place.get('position').latitude, place.get('position').longitude, userLocation.latitude, userLocation.longitude);
-    var roundedDistance = Math.round(distanceKilometer);
+    var roundedDistance = Math.round(distanceKilometer*10)/10;
     resultWithDistance[i] = {place: place, distance: roundedDistance}
   };
 
