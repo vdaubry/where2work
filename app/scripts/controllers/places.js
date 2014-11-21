@@ -31,7 +31,7 @@ angular.module('where2workApp')
     }
 
     $scope.reloadList = function() {
-      sessionStorage.removeItem('places'); 
+      sessionStorage.removeItem('places');
       $route.reload();
     }
   });
@@ -44,7 +44,8 @@ angular.module('where2workApp')
 
     parsePromise.then(function(object) {
       $scope.place = object;
-      var url = encodeURI("https://www.google.com/maps/embed/v1/place?key=AIzaSyAU-dlwZwy9u3YNF3UXSEAXr--rgBuDylc&q="+object.get('address'));
+      var google_api_key = "AIzaSyBI1_KZDTfUZGxsIRnYnTgbJ8uz7Q9u62g"
+      var url = encodeURI("https://www.google.com/maps/embed/v1/place?key="+google_api_key+"&q="+object.get('address'));
       console.log("add="+object.get('address'));
       $scope.url = url;
       $scope.trustSrc = function(src) {
