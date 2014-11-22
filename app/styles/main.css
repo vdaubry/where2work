@@ -87,9 +87,15 @@ body {
   background-image: url("../images/glyphicons_351_book_open.png")
 }
 
+.hotel {
+  background-image: url("../images/glyphicons_020_home.png")
+}
+
 .icon {
   width: 18px;
   height: 18px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
   display: inline-block;
 }
 

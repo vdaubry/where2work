@@ -44,7 +44,7 @@ angular.module('where2workApp')
 
     parsePromise.then(function(object) {
       $scope.place = object;
-      var google_api_key = "AIzaSyBI1_KZDTfUZGxsIRnYnTgbJ8uz7Q9u62g"
+      var google_api_key = "AIzaSyATWjJ2N7zzsx5hpsiVy3QNvzGhZLq2-R4"
       var url = encodeURI("https://www.google.com/maps/embed/v1/place?key="+google_api_key+"&q="+object.get('address'));
       console.log("add="+object.get('address'));
       $scope.url = url;
