@@ -52,8 +52,6 @@ angular.module('where2workApp')
         return $sce.trustAsResourceUrl(src);
       }
     });
-
-
   });
 
 
