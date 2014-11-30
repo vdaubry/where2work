@@ -1,94 +1,92 @@
-<div ng-controller="PlaceCreateCtrl">
-  <div class="alert alert-danger" ng-show="errorMsg">
-    <a href="" class="close" data-dismiss="alert">&times;</a>
-    <strong>Error!</strong> {{errorMsg}}
-  </div>
-  <div class="alert alert-success" ng-show="formSuccess">
-    <a href="" class="close" data-dismiss="alert">&times;</a>
-    The place has been successfully added
-  </div>
-  <br>
-  <h2>Add a new place :</h2>
-  <form ng-submit="submitElement()">
-    <div class="form-inputs">
-      <div class="form-group">
-        <label class="control-label">What is the name of this place ?</label>
-        <input type="text" name="name" ng-model="place.name" class="form-control ng-pristine ng-valid" placeholder="Enter name" required>
+<div class="alert alert-danger" ng-show="errorMsg">
+  <a href="" class="close" data-dismiss="alert">&times;</a>
+  <strong>Error!</strong> {{errorMsg}}
+</div>
+<div class="alert alert-success" ng-show="formSuccess">
+  <a href="" class="close" data-dismiss="alert">&times;</a>
+  The place has been successfully added
+</div>
+<br>
+<h2>Add a new place :</h2>
+<form ng-submit="submitElement()">
+  <div class="form-inputs">
+    <div class="form-group">
+      <label class="control-label">What is the name of this place ?</label>
+      <input type="text" name="name" ng-model="place.name" class="form-control ng-pristine ng-valid" placeholder="Enter name" required>
+    </div>
+    <div class="form-group">
+      <label class="control-label">What is the address :</label>
+      <input type="text" name="name" ng-model="place.address" ng-blur="updateCoords(place.address)" class="form-control ng-pristine ng-valid" placeholder="Looking for current location, type to change the address" required>
+    </div>
+    <div class="form-inline">
+      <input type="text" name="name" ng-model="place.longitude" class="form-control uneditable-input" placeholder="Computed longitude" disabled>
+      <input type="text" name="name" ng-model="place.latitude" class="form-control" placeholder="Computed latitude" disabled>
+    </div>
+    <br>
+    <div class="form-group">
+      <label class="control-label">
+        What kind of place is it ?
+      </label>
+      <div class="radio">
+        <label><input value="bar" type="radio" ng-model="place.placeType">Bar / Pub / Cafe</label>
       </div>
-      <div class="form-group">
-        <label class="control-label">What is the address :</label>
-        <input type="text" name="name" ng-model="place.address" ng-blur="updateCoords(place.address)" class="form-control ng-pristine ng-valid" placeholder="Enter full address" required>
+      <div class="radio">
+        <label><input value="coworking" type="radio" ng-model="place.placeType">Coworking space</label>
       </div>
-      <div class="form-inline">
-        <input type="text" name="name" ng-model="place.longitude" class="form-control uneditable-input" placeholder="Computed longitude" disabled>
-        <input type="text" name="name" ng-model="place.latitude" class="form-control" placeholder="Computed latitude" disabled>
+      <div class="radio">
+        <label><input value="library" type="radio" ng-model="place.placeType">Library</label>
       </div>
-      <br>
-      <div class="form-group">
-        <label class="control-label">
-          What kind of place is it ?
-        </label>
-        <div class="radio">
-          <label><input value="bar" type="radio" ng-model="place.placeType">Bar / Pub / Cafe</label>
-        </div>
-        <div class="radio">
-          <label><input value="coworking" type="radio" ng-model="place.placeType">Coworking space</label>
-        </div>
-        <div class="radio">
-          <label><input value="library" type="radio" ng-model="place.placeType">Library</label>
-        </div>
-        <div class="radio">
-          <label><input value="hotel" type="radio" ng-model="place.placeType">Hotel lobby</label>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label">
-          What is the wifi quality ?
-        </label>
-        <div class="radio">
-          <label><input value=0 type="radio" ng-model="place.wifiQuality">No wifi</label>
-        </div>
-        <div class="radio">
-          <label><input value=1 type="radio" ng-model="place.wifiQuality">Bad</label>
-        </div>
-        <div class="radio">
-          <label><input value=2 type="radio" ng-model="place.wifiQuality">Average</label>
-        </div>
-        <div class="radio">
-          <label><input value=4 type="radio" ng-model="place.wifiQuality">Perfect</label>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label">
-          Is it a good place to have a phone call or skype conference ?
-        </label>
-        <div class="radio">
-          <label><input value=1 type="radio" ng-model="place.phoneFriendly">Yes</label>
-        </div>
-        <div class="radio">
-          <label><input value=0 type="radio" ng-model="place.phoneFriendly">No</label>
-        </div>
+      <div class="radio">
+        <label><input value="hotel" type="radio" ng-model="place.placeType">Hotel lobby</label>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label">
-        Is it a calm and quiet place ?
+        What is the wifi quality ?
       </label>
       <div class="radio">
-        <label><input value=1 type="radio" ng-model="place.quiet">Yes</label>
+        <label><input value=0 type="radio" ng-model="place.wifiQuality">No wifi</label>
       </div>
       <div class="radio">
-        <label><input value=0 type="radio" ng-model="place.quiet">No</label>
+        <label><input value=1 type="radio" ng-model="place.wifiQuality">Bad</label>
+      </div>
+      <div class="radio">
+        <label><input value=2 type="radio" ng-model="place.wifiQuality">Average</label>
+      </div>
+      <div class="radio">
+        <label><input value=4 type="radio" ng-model="place.wifiQuality">Perfect</label>
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label">Enter the daily price (0 for free)</label>
-      <div class="input-group">
-        <input type="text" name="price" ng-model="place.price" class="form-control ng-pristine ng-valid" placeholder="Price in €" required>
-        <div class="input-group-addon">€</div>
+      <label class="control-label">
+        Is it a good place to have a phone call or skype conference ?
+      </label>
+      <div class="radio">
+        <label><input value=1 type="radio" ng-model="place.phoneFriendly">Yes</label>
+      </div>
+      <div class="radio">
+        <label><input value=0 type="radio" ng-model="place.phoneFriendly">No</label>
       </div>
     </div>
-    <a href="#/places" class="btn btn-default">Cancel</a>
-    <button type="submit" class="btn btn-success">Valider</button>
-  </form>
-</div>
+  </div>
+  <div class="form-group">
+    <label class="control-label">
+      Is it a calm and quiet place ?
+    </label>
+    <div class="radio">
+      <label><input value=1 type="radio" ng-model="place.quiet">Yes</label>
+    </div>
+    <div class="radio">
+      <label><input value=0 type="radio" ng-model="place.quiet">No</label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label">Enter the daily price (0 for free)</label>
+    <div class="input-group">
+      <input type="text" name="price" ng-model="place.price" class="form-control ng-pristine ng-valid" placeholder="Price in €" required>
+      <div class="input-group-addon">€</div>
+    </div>
+  </div>
+  <a href="#/places" class="btn btn-default">Cancel</a>
+  <button type="submit" class="btn btn-success">Valider</button>
+</form>

@@ -1,7 +1,7 @@
 <div ng-controller="PlacesCtrl">
   <div class="row search">
     <div class="col-xs-12">
-      <p>Your location: <input ng-model="formattedAddress" size=40></p>
+      <p>Your location: <input ng-model="formattedAddress" size=40> <button ng-click="reloadList()" ng-hide="loading" class="btn btn-warning"><i class="fa fa-refresh"></i></button></p>
     </div>
   </div>
 
@@ -15,33 +15,29 @@
 
   <div class="row">
     <ul class="list-group">
-      <li ng-repeat="placeInfo in places" class="list-group-item col-md-6 placeContainer">
-        <a href="#/place/{{placeInfo.place.objectId}}">
-          <h4>{{placeInfo.place.name}} - {{ placeInfo.distance}}km</h4>
-          <img src="../images/glyphicons_185_screenshot.png" class="icon"><span class="value">Address: {{placeInfo.place.address}}</span>
+      <li ng-repeat="placeInfo in places" class="col-md-6 placeContainer">
+        <a href="#/place/{{placeInfo.place.objectId}}" class="list-group-item">
+          <h3>{{placeInfo.place.name}} - {{ placeInfo.distance}}km</h3>
+          <i class="fa fa-location-arrow"></i><span class="value">Address: {{placeInfo.place.address}}</span>
           <br>
-          <span class="{{placeInfo.place.placeType}} icon"></span><span class="value">{{placeInfo.place.placeType}}</span>
+          <i class="icon fa" ng-class="{bar:'fa-glass', coworking:'fa-users', library:'fa-graduation-cap', hotel:'fa-home', hotel:'fa-home'}[placeInfo.place.placeType]"></i><span class="value">{{placeInfo.place.placeType}}</span>
           <br>
-          <img src="../images/glyphicons_441_phone_alt.png" class="icon">  Can have conf call ?<span class="glyphicon {{placeInfo.place.phoneFriendly | boolIcon}} value"></span>
+          <i class="fa fa-phone"></i><span class="value">Can have conf call ?</span><i class="value fa" ng-class="{true: 'fa-check', false: 'fa-close'}[placeInfo.place.phoneFriendly]"></i>
           <br>
-          <img src="../images/glyphicons_184_volume_up.png" class="icon">  Is it a quiet place ?<span class="glyphicon {{placeInfo.place.quiet | boolIcon}} value"></span>
+          <i class="fa fa-volume-up"></i><span class="value">Is it a quiet place ?</span><i class="value fa" ng-class="{true: 'fa-check', false: 'fa-close'}[placeInfo.place.quiet]"></i>
           <br>
-          <span class="glyphicon glyphicon-euro"></span><span class="value">{{placeInfo.place.price}}</span>
+          <i class="fa fa-eur"></i><span class="value"> {{placeInfo.place.price}}€ entrance fee</span>
           <div>
-            <img src="../images/glyphicons_073_wifi.png" class="icon">
-            <span>Wifi</span>
+            <i class="fa fa-wifi"></i><span> Wifi</span>
           </div>
           <div class="progress wifibar">
             <div class="progress-bar {{placeInfo.place.wifiQuality | wifiColor}}" role="progressbar" style="width: {{placeInfo.place.wifiQuality * 100 / 4}}px"></div>
           </div>
         </a>
       </li>
-
-      <br>
-      <button ng-click="reloadList()" ng-hide="loading" class="btn btn-warning">Reload places list</button>
     </ul>
   </div>
-
+</div>
 
 <script type="text/javascript">
   mixpanel.track("Video play");

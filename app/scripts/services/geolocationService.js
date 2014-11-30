@@ -9,6 +9,7 @@ geolocationService.factory('geolocationService', function($q, $window, $http) {
   factory.getLocation = function() {
     var deferred = $q.defer();
     if(factory.currentLocation) {
+      console.log("found current location in cache");
       deferred.resolve(factory.currentLocation);
     }
     else if(!$window.navigator) {
@@ -26,7 +27,7 @@ geolocationService.factory('geolocationService', function($q, $window, $http) {
   factory.reverseGeocodeLocation = function() {
     var deferred = $q.defer();
     var MAPS_ENDPOINT = 'http://maps.google.com/maps/api/geocode/json?latlng={POSITION}&sensor=false';
-    
+
     var geoPromise = factory.getLocation();
     geoPromise.then(function(coordinates) {
       var url = MAPS_ENDPOINT.replace('{POSITION}', coordinates.latitude + ',' + coordinates.longitude);
@@ -34,7 +35,8 @@ geolocationService.factory('geolocationService', function($q, $window, $http) {
     })
     .then(function(url) {
       $http.get(url).success(function(response) {
-        deferred.resolve(response.results[0].formatted_address);
+        factory.currentAddress = response.results[0].formatted_address;
+        deferred.resolve(factory.currentAddress);
       }).error(deferred.reject);
     });
 
@@ -57,4 +59,3 @@ geolocationService.factory('geolocationService', function($q, $window, $http) {
 
   return factory;
 });
- 

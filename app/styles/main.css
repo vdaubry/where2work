@@ -63,27 +63,8 @@ body {
 }
 
 .placeContainer {
-  line-height: 28px;
-  width: 300px;
-  /*height: 220px;
-  margin-left: auto;
-  margin-right: auto;*/
-}
-
-.bar {
-  background-image: url("../images/glyphicons_273_drink.png")
-}
-
-.coworking {
-  background-image: url("../images/glyphicons_043_group.png")
-}
-
-.library {
-  background-image: url("../images/glyphicons_351_book_open.png")
-}
-
-.hotel {
-  background-image: url("../images/glyphicons_020_home.png")
+  line-height: 38px;
+  list-style-type: none;
 }
 
 .icon {
@@ -96,7 +77,7 @@ body {
 
 .wifibar {
   left: 67px;
-  bottom: -1px;
+  bottom: 4px;
   position: absolute;
   width: 100px;
   height: 10px;

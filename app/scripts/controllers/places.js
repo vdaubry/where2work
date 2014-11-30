@@ -61,6 +61,15 @@ angular.module('where2workApp')
   .controller('PlaceCreateCtrl', function ($scope, parseService, geolocationService) {
     $scope.place = {};
 
+    var addressPromise = geolocationService.reverseGeocodeLocation();
+    addressPromise.then(function(formattedAddress) {
+      if(!$scope.place.address) {
+        $scope.place.address = formattedAddress;
+        $scope.place.longitude = geolocationService.currentLocation.longitude;
+        $scope.place.latitude = geolocationService.currentLocation.latitude;
+      }
+    });
+
     $scope.updateCoords = function(address) {
       var geoservicePromise = geolocationService.geocodeAddress(address);
       geoservicePromise.then(function(result, coords){
@@ -78,6 +87,7 @@ angular.module('where2workApp')
       putObjectPromise.then(function(){
         //invalidate cache
         sessionStorage.removeItem('places');
+        sessionStorage.removeItem('formattedAddress');
         $scope.formSuccess = true;
       }, function(reason) {
         $scope.errorMsg = reason;

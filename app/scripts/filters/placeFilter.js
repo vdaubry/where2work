@@ -15,9 +15,3 @@ module.filter('wifiColor', function(parseService, $q) {
     }
   };
 });
-
-module.filter('boolIcon', function(parseService, $q) {
-  return function (phone) {
-    return phone ? "glyphicon-ok" : "glyphicon-remove";
-  };
-});
