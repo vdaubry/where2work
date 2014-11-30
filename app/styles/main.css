@@ -41,13 +41,6 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
-.centerContainer {
-  text-align: center;
-}
-
-.spinner span {
-  margin-left: 10px;
-}
 
 .intro {
   color: white;
@@ -65,15 +58,17 @@ body {
   padding: 20px 0px 20px 0px;
 }
 
+.spinner {
+  text-align: center;
+}
+
 .placeContainer {
   line-height: 28px;
   width: 300px;
-  height: 220px;
+  /*height: 220px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
 }
-
-
 
 .bar {
   background-image: url("../images/glyphicons_273_drink.png")
