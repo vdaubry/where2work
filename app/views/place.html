@@ -1,27 +1,27 @@
 <div ng-controller="PlaceCtrl">
-  <div class="placeContainer">
-    <div class="place">
-      <h4>{{place.get('name')}}</h4>
-      <img src="images/glyphicons_185_screenshot.png" class="icon"><span class="value">Address: {{place.get('address')}}</span>
+  <div class="row placeContainer">
+    <div class="col-md-4 col-md-offset-2">
+      <h3>{{place.get('name')}}</h3>
+      <i class="fa fa-location-arrow"></i><span class="value">Address: {{place.get('address')}}</span>
       <br>
-      <span class="{{place.get('placeType')}} icon"></span><span class="value">{{place.get('placeType')}}</span>
+      <i class="icon fa" ng-class="{bar:'fa-glass', coworking:'fa-users', library:'fa-graduation-cap', hotel:'fa-home', hotel:'fa-home'}[place.get('placeType')]"></i><span class="value">{{place.get('placeType')}}</span>
       <br>
-      <img src="images/glyphicons_441_phone_alt.png" class="icon">  Can have conf call ?<span class="glyphicon {{place.get('phoneFriendly') | boolIcon}} value"></span>
+      <i class="fa fa-phone"></i><span class="value">Can have conf call ?</span><i class="value fa" ng-class="{true: 'fa-check', false: 'fa-close'}[place.get('phoneFriendly')]"></i>
       <br>
-      <img src="images/glyphicons_184_volume_up.png" class="icon">  Is it a quiet place ?<span class="glyphicon {{place.get('quiet') | boolIcon}} value"></span>
+      <i class="fa fa-volume-up"></i><span class="value">Is it a quiet place ?</span><i class="value fa" ng-class="{true: 'fa-check', false: 'fa-close'}[place.get('quiet')]"></i>
       <br>
-      <span class="glyphicon glyphicon-euro"></span><span class="value">{{place.get('price')}}</span>
+      <i class="fa fa-eur"></i><span class="value"> {{place.get('price')}}€ entrance fee</span>
       <div style="position: absolute;">
         <div>
-          <img src="images/glyphicons_073_wifi.png" class="icon">
-          <span>Wifi</span>  
+          <i class="fa fa-wifi"></i>
+          <span>Wifi</span>
         </div>
         <div class="progress wifibar" style="bottom: -10px; left: 55px">
           <div class="progress-bar {{place.get('wifiQuality') | wifiColor}}" role="progressbar" style="width: {{place.get('wifiQuality') * 100 / 4}}px"></div>
         </div>
       </div>
     </div>
-    
+
     <br>
     <iframe
       width="350"
@@ -31,5 +31,5 @@
     </iframe>
   </div>
 
-  
+
 </div>
