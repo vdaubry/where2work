@@ -1,0 +1,1243 @@
+{ "results": [
+	{
+        "address": "17 Rue des Petits Carreaux, 75002 Paris, France",
+        "createdAt": "2015-03-17T15:37:34.308Z",
+        "name": "Bistro Les Petits Carreaux",
+        "objectId": "1Om4Dtmobq",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8670515,
+            "longitude": 2.3468238000000383
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2015-03-17T15:37:34.308Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "6 Rue Arthur Rozier, 75019 Paris, France",
+        "createdAt": "2014-12-11T11:11:56.795Z",
+        "name": "LAPTOP",
+        "objectId": "2CDGq7nn4M",
+        "phoneFriendly": true,
+        "placeType": "coworking",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.877313,
+            "longitude": 2.3911639000000378
+        },
+        "price": 24,
+        "quiet": true,
+        "updatedAt": "2014-12-11T11:11:56.795Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "135 Avenue Parmentier, 75011 Paris, France",
+        "createdAt": "2015-11-18T12:35:53.546Z",
+        "name": "La fauvette",
+        "objectId": "3eZ0nna9SH",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8698711643639,
+            "longitude": 2.3711013161152072
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2015-11-18T12:35:53.546Z",
+        "wifiQuality": 0
+    },
+	{
+        "address": "107 France Avenue, 75013 Paris, France",
+        "createdAt": "2014-11-11T14:11:26.067Z",
+        "name": "Starbucks",
+        "objectId": "3hfoPoAVve",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8299509,
+            "longitude": 2.376933699999995
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:59.330Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "29 Faubourg Saint-Antoine Street, 75011 Paris, France",
+        "createdAt": "2014-11-11T14:09:15.070Z",
+        "name": "Starbucks",
+        "objectId": "5svGe23Vdp",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.852806,
+            "longitude": 2.3717709000000013
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:40.809Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "5 Ambroisie Street, 75012 Paris, France",
+        "createdAt": "2014-11-11T14:11:36.160Z",
+        "name": "Starbucks",
+        "objectId": "6LVlumkbPJ",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8337555,
+            "longitude": 2.3860396000000037
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:55.586Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "16 Rue Pierre Lescot, 75001 Paris-1ER-Arrondissement, France",
+        "createdAt": "2015-12-17T12:57:40.088Z",
+        "name": "Au père tranquille",
+        "objectId": "6csOku8UeB",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8621444,
+            "longitude": 2.3484672
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2015-12-17T12:57:40.088Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "46-48 Rue René Clair, 75018 Paris, France",
+        "createdAt": "2014-12-11T11:17:29.810Z",
+        "name": "STUDIOS SINGULIERS",
+        "objectId": "7BBbx48CQf",
+        "phoneFriendly": true,
+        "placeType": "coworking",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.89391120000001,
+            "longitude": 2.354097599999932
+        },
+        "price": 24,
+        "quiet": true,
+        "updatedAt": "2014-12-11T11:17:29.810Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "78 Champs-Élysées, 75008 Paris, France",
+        "createdAt": "2014-11-11T14:12:18.933Z",
+        "name": "Starbucks",
+        "objectId": "7JlQSDNofc",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.87166310000001,
+            "longitude": 2.3045715000000655
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:45.583Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "70 Boulevard du Montparnasse, 75014 Paris, France",
+        "createdAt": "2014-11-11T14:10:15.569Z",
+        "name": "Starbucks",
+        "objectId": "7SUKrGMRx1",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8432372,
+            "longitude": 2.3246707000000697
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:15.849Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "29 Meaux Street, 75019 Paris, France",
+        "createdAt": "2014-11-11T13:57:54.205Z",
+        "name": "La mutinerie",
+        "objectId": "9XGJnbLAZE",
+        "phoneFriendly": true,
+        "placeType": "coworking",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8795595,
+            "longitude": 2.371743199999969
+        },
+        "price": 25,
+        "quiet": true,
+        "updatedAt": "2014-11-11T14:38:40.174Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "59A Boulevard Macdonald, 75019 Paris, France",
+        "createdAt": "2015-05-02T14:07:26.491Z",
+        "name": "Bibliothèque de la cité des sciences",
+        "objectId": "AMgxaRiUkN",
+        "phoneFriendly": false,
+        "placeType": "library",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8953352,
+            "longitude": 2.3874314
+        },
+        "price": 0,
+        "quiet": true,
+        "updatedAt": "2015-05-02T14:07:26.491Z",
+        "wifiQuality": 1
+    },
+	{
+        "address": "Les Halles, 75001 Paris, France",
+        "createdAt": "2014-11-11T14:08:43.447Z",
+        "name": "Starbucks",
+        "objectId": "Ab8c9fJnch",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.862778,
+            "longitude": 2.344444000000067
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:52.248Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "31 Rue Pajol, 75018 Paris, France",
+        "createdAt": "2014-12-11T11:15:57.076Z",
+        "name": "DRAFT - LES ATELIERS CONNECTÉS",
+        "objectId": "Aj2vcpq6op",
+        "phoneFriendly": true,
+        "placeType": "coworking",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8877149,
+            "longitude": 2.3617265000000316
+        },
+        "price": 12,
+        "quiet": true,
+        "updatedAt": "2014-12-11T11:15:57.076Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "4 Rue Danton, 75006 Paris, France",
+        "createdAt": "2014-11-25T14:54:52.993Z",
+        "name": "Holiday Inn Paris - Notre Dame",
+        "objectId": "BEw8oejGdN",
+        "phoneFriendly": true,
+        "placeType": "hotel",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8528593,
+            "longitude": 2.3421244999999544
+        },
+        "price": 0,
+        "quiet": true,
+        "updatedAt": "2014-11-25T14:54:52.993Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "21 Rue de Dunkerque, 75010 Paris, France",
+        "createdAt": "2015-08-27T11:39:38.089Z",
+        "name": "Rendez vous des belges",
+        "objectId": "BPoaxftO6N",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8798778,
+            "longitude": 2.3554351
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2015-08-27T11:39:38.089Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "42 Ponthieu Street, 75008 Paris, France",
+        "createdAt": "2014-11-19T14:26:00.906Z",
+        "name": "Baroche",
+        "objectId": "BdFyldvjky",
+        "phoneFriendly": false,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8714,
+            "longitude": 2.307543399999986
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-19T14:26:00.906Z",
+        "wifiQuality": 1
+    },
+	{
+        "address": "18 Quai de la Marne, 75019 Paris-19E-Arrondissement, France",
+        "createdAt": "2016-05-01T15:33:30.417Z",
+        "name": "Café Odilon",
+        "objectId": "BqnVd3Aotd",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.88942756750079,
+            "longitude": 2.381649088807707
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2016-05-01T15:33:30.417Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "91 Boulevard Saint-Germain, 75006 Paris, France",
+        "createdAt": "2014-11-11T14:09:38.586Z",
+        "name": "Starbucks",
+        "objectId": "CEKFs4GbQJ",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.851957,
+            "longitude": 2.339437699999962
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:26.330Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "24 Boulevard Saint-Michel, 75005 Paris, France",
+        "createdAt": "2014-11-11T14:09:27.850Z",
+        "name": "Starbucks",
+        "objectId": "CYbU6L22H4",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8506435,
+            "longitude": 2.3428257000000485
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:35.499Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "François Mauriac Street, 75013 Paris, France",
+        "createdAt": "2014-11-11T14:01:54.322Z",
+        "name": "BPI (bibliothèque pompidou)",
+        "objectId": "D5gceA5aen",
+        "phoneFriendly": false,
+        "placeType": "library",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8338944,
+            "longitude": 2.3775918000000047
+        },
+        "price": 0,
+        "quiet": true,
+        "updatedAt": "2014-11-11T14:38:32.519Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "20 Avenue de Laumière, 75019 Paris, France",
+        "createdAt": "2014-11-25T14:52:22.683Z",
+        "name": "Les Chic Types",
+        "objectId": "DVHXU21bex",
+        "phoneFriendly": false,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.88405470000001,
+            "longitude": 2.380790599999955
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-25T14:52:22.683Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "22 Rue des Taillandiers, 75011 Paris, France",
+        "createdAt": "2014-12-18T08:23:10.426Z",
+        "name": "Le Tank",
+        "objectId": "FV5SPaeC4l",
+        "phoneFriendly": true,
+        "placeType": "coworking",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.85505329999999,
+            "longitude": 2.375038399999994
+        },
+        "price": 35,
+        "quiet": true,
+        "updatedAt": "2014-12-18T08:23:10.426Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "12 Rue Léon Schwartzenberg, 75010 Paris, France",
+        "createdAt": "2016-04-23T15:20:29.818Z",
+        "name": "Mediathèque Françoise Sagan",
+        "objectId": "FYLL77MrUN",
+        "phoneFriendly": false,
+        "placeType": "library",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.87572697729966,
+            "longitude": 2.3540326015927384
+        },
+        "price": 0,
+        "quiet": true,
+        "updatedAt": "2016-04-23T15:20:29.818Z",
+        "wifiQuality": 1
+    },
+	{
+        "address": "13 Rue Vivienne, 75002 Paris, France",
+        "createdAt": "2014-12-18T08:24:38.999Z",
+        "name": "Soleilles cowork",
+        "objectId": "Gt1XlNnjVN",
+        "phoneFriendly": true,
+        "placeType": "coworking",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8681937,
+            "longitude": 2.3392910999999685
+        },
+        "price": 30,
+        "quiet": true,
+        "updatedAt": "2014-12-18T08:24:38.999Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "2 Place de la Porte Maillot 75017 Paris",
+        "createdAt": "2014-11-11T14:12:42.066Z",
+        "name": "Starbucks",
+        "objectId": "HNPQwFai0C",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.87621290000001,
+            "longitude": 2.2963618999999653
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:36.197Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "61 Rue Traversière, 75012 Paris, France",
+        "createdAt": "2014-12-11T11:14:24.152Z",
+        "name": "LA CORDÉE - GARE DE LYON",
+        "objectId": "I81GnlzSsw",
+        "phoneFriendly": true,
+        "placeType": "coworking",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8489575,
+            "longitude": 2.3742680999999948
+        },
+        "price": 34,
+        "quiet": true,
+        "updatedAt": "2014-12-11T11:14:24.152Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "98 Rue La Boétie, 75008 Paris, France",
+        "createdAt": "2014-12-09T09:37:02.435Z",
+        "name": "Brasserie La Boétie",
+        "objectId": "JZhJUUQL0a",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8721591,
+            "longitude": 2.3087543000000323
+        },
+        "price": 0,
+        "quiet": true,
+        "updatedAt": "2014-12-09T09:37:02.435Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "29 Rue des Vinaigriers, 75010 Paris, France",
+        "createdAt": "2014-12-11T11:16:22.351Z",
+        "name": "COWORKSHOP",
+        "objectId": "Jfk0kR97jZ",
+        "phoneFriendly": true,
+        "placeType": "coworking",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8729181,
+            "longitude": 2.3625183000000334
+        },
+        "price": 15,
+        "quiet": true,
+        "updatedAt": "2014-12-11T11:16:22.351Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "37 Rue La Boétie, 75008 Paris, France",
+        "createdAt": "2014-11-11T14:12:06.992Z",
+        "name": "Starbucks",
+        "objectId": "JicBOmV3FM",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8734105,
+            "longitude": 2.314872400000013
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2015-09-25T12:53:16.097Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "4299 Avenue du Trône, 75012 Paris, France",
+        "createdAt": "2016-02-09T14:54:18.263Z",
+        "name": "Le dalou",
+        "objectId": "JjFLRrhUe0",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8481173,
+            "longitude": 2.3978524
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2016-02-09T14:54:18.263Z",
+        "wifiQuality": 1
+    },
+	{
+        "address": "26 Avenue de l'Opéra, 75001 Paris, France",
+        "createdAt": "2014-11-11T14:07:43.619Z",
+        "name": "Starbucks",
+        "objectId": "K0sMEgcA5z",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8672852,
+            "longitude": 2.3340519999999287
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:38:04.849Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "79 Quincampoix Street, 75003 Paris, France",
+        "createdAt": "2014-11-11T13:55:02.180Z",
+        "name": "AntiCafé Beaubourg",
+        "objectId": "KvFORnCAe4",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8623129,
+            "longitude": 2.3510670000000573
+        },
+        "price": 16,
+        "quiet": true,
+        "updatedAt": "2014-11-11T14:38:47.828Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "3 Boulevard des Capucines, 75009 Paris, France",
+        "createdAt": "2014-11-11T14:07:33.634Z",
+        "name": "Starbucks",
+        "objectId": "PeqR88jXXj",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8708932,
+            "longitude": 2.333726800000022
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:38:09.447Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "François Mauriac Street, 75013 Paris, France",
+        "createdAt": "2014-11-11T14:00:17.829Z",
+        "name": "BNF",
+        "objectId": "Rnwft2pWCZ",
+        "phoneFriendly": false,
+        "placeType": "library",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8338944,
+            "longitude": 2.3775918000000047
+        },
+        "price": 3,
+        "quiet": true,
+        "updatedAt": "2014-11-11T14:38:36.094Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "6 Place de la Bastille, 75012 Paris, France",
+        "createdAt": "2015-04-01T14:33:42.886Z",
+        "name": "Café Bastille",
+        "objectId": "RvDZGuPBAP",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8532032,
+            "longitude": 2.3693803999999545
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2015-04-01T14:33:42.886Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "39 Caire Street, 75002 Paris, France",
+        "createdAt": "2014-11-11T13:53:31.758Z",
+        "name": "NUMA",
+        "objectId": "SKY1UB2yOp",
+        "phoneFriendly": true,
+        "placeType": "coworking",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8676305,
+            "longitude": 2.349539600000071
+        },
+        "price": 0,
+        "quiet": true,
+        "updatedAt": "2014-11-11T14:38:54.014Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "Place de la Bataille de Stalingrad, 75019 Paris, France",
+        "createdAt": "2014-12-19T16:38:18.055Z",
+        "name": "25e EST",
+        "objectId": "SLHgnfNP77",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8833681,
+            "longitude": 2.3692349000000377
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-12-19T16:38:18.055Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "10 Rue de Richelieu, 75001 Paris, France",
+        "createdAt": "2014-11-11T13:55:39.686Z",
+        "name": "AntiCafé Louvre",
+        "objectId": "Scp5TGptME",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8641804,
+            "longitude": 2.3362478999999894
+        },
+        "price": 16,
+        "quiet": true,
+        "updatedAt": "2014-11-11T14:38:44.034Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "27 Lorraine Street, 92300 Levallois-Perret, France",
+        "createdAt": "2014-11-11T14:15:54.847Z",
+        "name": "Starbucks",
+        "objectId": "Sg5D2Ee2ek",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8932249,
+            "longitude": 2.296744399999966
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:07.076Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "Chaussée de Charleroi 39, 1060 Saint-Gilles, Belgium",
+        "createdAt": "2015-12-22T09:35:24.656Z",
+        "name": "Bocca Moka",
+        "objectId": "TL9jnT99IM",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 50.832202599999995,
+            "longitude": 4.3564117
+        },
+        "price": 0,
+        "quiet": true,
+        "updatedAt": "2015-12-22T09:35:24.656Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "25 Boulevard de Sébastopol, 75001 Paris, France",
+        "createdAt": "2014-11-23T18:11:54.514Z",
+        "name": "Dupont café",
+        "objectId": "TktakRKDkn",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8597701,
+            "longitude": 2.3488836999999876
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-23T18:11:54.514Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "35 Avenue Jean Jaurès, 93300 Aubervilliers, France",
+        "createdAt": "2014-12-11T11:11:15.278Z",
+        "name": "COSYWORKING",
+        "objectId": "UIt8AzDlH3",
+        "phoneFriendly": true,
+        "placeType": "coworking",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.9029165,
+            "longitude": 2.390713300000016
+        },
+        "price": 20,
+        "quiet": true,
+        "updatedAt": "2014-12-11T11:11:15.278Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "18 Boulevard Montmartre, 75009 Paris, France",
+        "createdAt": "2014-11-11T14:06:59.220Z",
+        "name": "Starbucks",
+        "objectId": "UWC2tAru6l",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8721785,
+            "longitude": 2.3408240999999634
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:38:20.722Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "MK2 Quai de Seine, 75019 Paris, France",
+        "createdAt": "2016-03-14T09:57:30.268Z",
+        "name": "Le Barlu",
+        "objectId": "Vx1vt5DPRW",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8848282,
+            "longitude": 2.3712481
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2016-03-14T09:57:30.268Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "66 Motte-Picquet Avenue, 75015 Paris, France",
+        "createdAt": "2014-11-11T14:13:18.339Z",
+        "name": "Starbucks",
+        "objectId": "W0o04YHEfE",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8495444,
+            "longitude": 2.2985568000000285
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:23.055Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "90 Rue Saint-Dominique, 75007 Paris, France",
+        "createdAt": "2014-11-11T14:13:06.264Z",
+        "name": "Starbucks",
+        "objectId": "W6PDOX9YzH",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8595683,
+            "longitude": 2.3059001000000308
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:27.942Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "21 Petits Carreaux Street, 75002 Paris, France",
+        "createdAt": "2014-11-11T14:03:33.986Z",
+        "name": "Starbucks",
+        "objectId": "WbRvn0IwlC",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8671521,
+            "longitude": 2.346932700000025
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:38:28.319Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "7 Poissonnière Street, 75002 Paris, France",
+        "createdAt": "2014-11-11T14:06:46.595Z",
+        "name": "Starbucks",
+        "objectId": "XxIlWyNYy9",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.86892719999999,
+            "longitude": 2.3474827000000005
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:38:24.584Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "22 Rue de Berri, 75008 Paris, France",
+        "createdAt": "2014-11-22T10:28:31.031Z",
+        "name": "Hotel California",
+        "objectId": "XxS0rX6Z0k",
+        "phoneFriendly": true,
+        "placeType": "hotel",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8727644,
+            "longitude": 2.305547199999978
+        },
+        "price": 0,
+        "quiet": true,
+        "updatedAt": "2014-11-22T10:28:31.031Z",
+        "wifiQuality": 1
+    },
+	{
+        "address": "11 Boulevard de Sébastopol, 75001 Paris, France",
+        "createdAt": "2014-11-11T14:09:02.562Z",
+        "name": "Starbucks",
+        "objectId": "ZzMzHphMw2",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8589876,
+            "longitude": 2.348209499999939
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:44.764Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "4 Avenue Percier, 75008 Paris, France",
+        "createdAt": "2015-02-24T15:29:54.504Z",
+        "name": "Le Percier",
+        "objectId": "aQ59gV1CbH",
+        "phoneFriendly": false,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.87386069999999,
+            "longitude": 2.3144843999999694
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2015-02-24T15:29:54.504Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "2 Porte Maillot Square, 75017 Paris, France",
+        "createdAt": "2014-11-11T14:16:18.310Z",
+        "name": "Starbucks",
+        "objectId": "bceLPsaIhA",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.878502,
+            "longitude": 2.2831979999999703
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:03.422Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "13 Président Salvador Allende Avenue, 94110 Arcueil, France",
+        "createdAt": "2014-11-11T14:15:09.395Z",
+        "name": "Starbucks",
+        "objectId": "cLjulcgW6E",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8103057,
+            "longitude": 2.3282834999999977
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:12.428Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "146 Rue des Poissonniers, 75018 Paris, France",
+        "createdAt": "2014-12-11T11:18:02.386Z",
+        "name": "CITIZEN BOX",
+        "objectId": "ccG5SE4qAB",
+        "phoneFriendly": true,
+        "placeType": "coworking",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8970546,
+            "longitude": 2.3527434000000085
+        },
+        "price": 12,
+        "quiet": true,
+        "updatedAt": "2014-12-11T11:18:02.386Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "297 Rue de Vaugirard, 75015 Paris, France",
+        "createdAt": "2014-11-11T14:10:39.260Z",
+        "name": "Starbucks",
+        "objectId": "dFGKZtCLVh",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8390247,
+            "longitude": 2.300394200000028
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:07.334Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "Carrée et Pyramide du Louvre Path, 75001 Paris, France",
+        "createdAt": "2014-11-11T14:08:05.610Z",
+        "name": "Starbucks",
+        "objectId": "eiIqjrnfku",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.860815,
+            "longitude": 2.3366201000000046
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:55.877Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "21 Bréa Street, 75006 Paris, France",
+        "createdAt": "2014-11-11T14:09:59.910Z",
+        "name": "Starbucks",
+        "objectId": "fV3XtZx1lC",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8427715,
+            "longitude": 2.3300203999999667
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:19.861Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "8 Place de la Bataille de Stalingrad, 75019 Paris, France",
+        "createdAt": "2015-06-10T08:14:54.686Z",
+        "name": "La rotonde",
+        "objectId": "fVDrlwL51Y",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8835226,
+            "longitude": 2.3695836
+        },
+        "price": 0,
+        "quiet": true,
+        "updatedAt": "2015-06-10T08:14:54.686Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "2 Échelle Street, 75001 Paris, France",
+        "createdAt": "2014-11-11T14:07:54.705Z",
+        "name": "Starbucks",
+        "objectId": "gRwikSDWMb",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8634845,
+            "longitude": 2.334184100000016
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:38:00.921Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "23 Avenue de Wagram, 75017 Paris, France",
+        "createdAt": "2014-11-11T14:12:31.445Z",
+        "name": "Starbucks",
+        "objectId": "jGdfqIXC9Z",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.87621290000001,
+            "longitude": 2.2963618999999653
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:41.618Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "80 Général Leclerc Avenue, 75014 Paris, France",
+        "createdAt": "2014-11-11T14:11:16.192Z",
+        "name": "Starbucks",
+        "objectId": "jozdockASY",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8291294,
+            "longitude": 2.3273884999999837
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:03.201Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "90 Avenue Victor-Hugo, 75116 Paris, France",
+        "createdAt": "2014-11-11T14:12:53.085Z",
+        "name": "Starbucks",
+        "objectId": "k0uCPy6K7V",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8691493,
+            "longitude": 2.283905699999991
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:31.983Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "152 Avenue Parmentier, 75010 Paris, France",
+        "createdAt": "2015-12-05T09:19:57.572Z",
+        "name": "Le floréal",
+        "objectId": "kDdm8kYmLh",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.870058177058525,
+            "longitude": 2.3710514431430583
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2015-12-05T09:19:57.572Z",
+        "wifiQuality": 0
+    },
+	{
+        "address": "5 Tony Garnier Street, 92100 Boulogne-Billancourt, France",
+        "createdAt": "2014-11-11T14:16:55.724Z",
+        "name": "Starbucks",
+        "objectId": "kxY61PfLND",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8370501,
+            "longitude": 2.23932149999996
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:34:11.621Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "108 Boulevard Haussmann, 75008 Paris, France",
+        "createdAt": "2014-11-11T14:07:20.088Z",
+        "name": "Starbucks",
+        "objectId": "nWHd6vnZZG",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.87479829999999,
+            "longitude": 2.3212425000000394
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:38:13.568Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "43 Félix Faure Avenue, 75015 Paris, France",
+        "createdAt": "2014-11-11T14:13:31.498Z",
+        "name": "Starbucks",
+        "objectId": "ojvzjJL0eY",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8408396,
+            "longitude": 2.2877926999999545
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:36:18.149Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "32 Boulevard Haussmann, 75009 Paris, France",
+        "createdAt": "2014-11-11T14:07:09.366Z",
+        "name": "Starbucks",
+        "objectId": "okWOQi5EoY",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.872932,
+            "longitude": 2.3343707000000222
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:38:17.172Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "17 Boulevard de Vaugirard, 75015 Paris, France",
+        "createdAt": "2014-11-11T14:10:25.481Z",
+        "name": "Starbucks",
+        "objectId": "pw6VhiuhmH",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8413675,
+            "longitude": 2.320331900000042
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:11.913Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "utd",
+        "createdAt": "2016-02-25T12:56:22.148Z",
+        "name": "utd",
+        "objectId": "qYWaqBxxFP",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 43.6077743,
+            "longitude": 1.4378107999999998
+        },
+        "price": 2,
+        "quiet": true,
+        "updatedAt": "2016-02-25T12:56:22.148Z",
+        "wifiQuality": 4
+    },
+	{
+        "address": "17 Avenue Corentin Cariou, 75019 Paris, France",
+        "createdAt": "2016-04-22T07:10:58.186Z",
+        "name": "T'm café",
+        "objectId": "qxi54roZi3",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8958754,
+            "longitude": 2.3832736999999997
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2016-04-22T07:10:58.186Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "4 Aubry le Boucher Street, 75004 Paris, France",
+        "createdAt": "2014-11-11T14:08:53.145Z",
+        "name": "Starbucks",
+        "objectId": "yhjxQGrvuE",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8603803,
+            "longitude": 2.3505122999999912
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2014-11-11T14:37:48.119Z",
+        "wifiQuality": 2
+    },
+	{
+        "address": "41 Quai de la Loire, 75019 Paris-19E-Arrondissement, France",
+        "createdAt": "2015-08-19T15:18:16.105Z",
+        "name": "Pavillon des canaux",
+        "objectId": "zDTjIZ4lPj",
+        "phoneFriendly": true,
+        "placeType": "bar",
+        "position": {
+            "__type": "GeoPoint",
+            "latitude": 48.8873612,
+            "longitude": 2.3783733
+        },
+        "price": 0,
+        "quiet": false,
+        "updatedAt": "2015-08-19T15:18:16.105Z",
+        "wifiQuality": 1
+    }
+] }

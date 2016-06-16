@@ -48,6 +48,7 @@ geolocationService.factory('geolocationService', function($q, $window, $http) {
     var geocoder = new google.maps.Geocoder();
 
     geocoder.geocode( { 'address': address}, function(results, status) {
+      console.log("results"+results);
       var formatedAddress = results[0].formatted_address;
       var coords = {longitude: results[0].geometry.location.D, latitude: results[0].geometry.location.k};
       var result = {formatedAddress: formatedAddress, coords: coords}
